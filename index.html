@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project5</title>
+
+    <!-- link css file -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- link remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+
+    <!-- link swiper css file -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+</head>
+<body>
+
+    <header>
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>Project<span>5</span></h1>
+            </div>
+
+            <ul class="navbar">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="ri-home-2-line"></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Movies.html" class="nav-link">
+                        <i class="ri-vidicon-line"></i>
+                        <span class="nav-text">Movies</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="ri-tv-line"></i>
+                        <span class="nav-text">Books</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar bottom">
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:5500/Project5/Login.html" class="nav-link">
+                        <i class="ri-question-line"></i>
+                        <span class="nav-text">Login</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar bottom">
+                <li class="nav-item">
+                    <a href="AboutMe.html" class="nav-link">
+                        <i class="ri-question-line"></i>
+                        <span class="nav-text">About Me</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- start hero section -->
+         <section class="hero">
+            <div class="top">
+
+                <!-- search -->
+                 <div class="search">
+                    <input type="text" id="searchBar" placeholder="Search for items..." onkeyup="filterList()">
+                    <i class="ri-search-line"></i>
+                 </div>
+
+                 <div class="main-icons">
+                    <i class="ri-notification-2-line m-icon "></i>
+                    <i class="ri-shopping-bag-2-fill m-icon"></i>
+                 </div>
+            </div>
+
+            <!-- swiper section -->
+             <div class="container">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- slide 01 -->
+                        <div class="swiper-slide">
+
+                            <!-- left side -->
+                             <div class="swiper-left">
+                                <img decoding="async" src="great gatsby.jpg" alt="">
+                             </div>
+
+                             <!-- right side -->
+                             <div class="swiper-right">
+                                <h2>The Great Gatsby</h2>
+                                <p>"The Great Gatsby" explores themes of wealth, love, and the American Dream through the story of Jay Gatsby's obsessive pursuit of Daisy Buchanan in 1920s America.</p>
+
+                                <ul class="genre">
+                                    <li>Literary</li>
+                                    <li>Fiction</li>
+                                    <li>Romance</li>
+                                </ul>
+
+                                <p class="imdb"><i class="ri-star-s-fill"></i> <span>8.1</span>/10</p>
+
+                                <div class="buttons">
+                                    <button type="button" class="wtach">Buy Now</button>
+                                    <button type="button" class="fav"><i class="ri-add-line"></i></button>
+                                </div>
+                             </div>
+                        </div>
+
+                        <!-- slide 02 -->
+                        <div class="swiper-slide">
+
+                            <!-- left side -->
+                             <div class="swiper-left">
+                                <img decoding="async" src="https://wallpapers.com/downloads/high/lord-of-the-rings-wallpaper-jk53-high-quality-wallpaper-65m6hkegxbkpjw0w.webp" alt="">
+                             </div>
+
+                             <!-- right side -->
+                             <div class="swiper-right">
+                                <h2>Lord of The Rings</h2>
+                                <p>Frodo Baggins embarks on a quest to destroy the One Ring, joined by a diverse fellowship of allies. Together, they face perilous challenges in their fight against the Dark Lord Sauron.</p>
+
+                                <ul class="genre">
+                                    <li>Epic</li>
+                                    <li>Fantasy</li>
+                                    <li>Adventure</li>
+                                </ul>
+
+                                <p class="imdb"><i class="ri-star-s-fill"></i> <span>9.5</span>/10</p>
+
+                                <div class="buttons">
+                                    <button type="button" class="wtach"><a href="https://www.amazon.com/Fellowship-Ring-Lord-Rings-Part/dp/061826051X/ref=tmm_hrd_swatch_0?_encoding=UTF8&sr=8-1 " class="nav-link" style="color: azure;text-decoration: none;">Buy Now</a></button>
+                                    <button type="button" class="fav"><i class="ri-add-line"></i></button>
+                                </div>
+                             </div>
+                        </div>
+
+                        <!-- slide 03 -->
+                        <div class="swiper-slide">
+
+                            <!-- left side -->
+                             <div class="swiper-left">
+                                <img decoding="async" src="The Witcher Fanart Collection.jpeg" alt="">
+                             </div>
+
+                             <!-- right side -->
+                             <div class="swiper-right">
+                                <h2>The Witcher</h2>
+                                <p>The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.</p>
+
+                                <ul class="genre">
+                                    <li>Action</li>
+                                    <li>Adventure</li>
+                                    <li>Fantasy</li>
+                                </ul>
+
+                                <p class="imdb"><i class="ri-star-s-fill"></i> <span>8</span>/10</p>
+
+                                <div class="buttons">
+                                    <button type="button" class="wtach">Buy Now</button>
+                                    <button type="button" class="fav"><i class="ri-add-line"></i></button>
+                                </div>
+                             </div>
+                        </div>
+
+                        <!-- slide 04 -->
+                        <div class="swiper-slide">
+
+                            <!-- left side -->
+                             <div class="swiper-left">
+                                <img decoding="async" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                             </div>
+
+                             <!-- right side -->
+                             <div class="swiper-right">
+                                <h2>Musashi</h2>
+                                <p>"Miyamoto Musashi" chronicles the life of the famous samurai as he seeks mastery in swordsmanship and self-understanding through a series of duels and introspective journeys.</p>
+
+                                <ul class="genre">
+                                    <li>Adventure</li>
+                                    <li>Philosophy</li>
+                                    <li>Historical</li>
+                                </ul>
+
+                                <p class="imdb"><i class="ri-star-s-fill"></i> <span>8.7</span>/10</p>
+
+                                <div class="buttons">
+                                    <button type="button" class="wtach">Buy Now </button>
+                                    <button type="button" class="fav"><i class="ri-add-line"></i></button>
+                                </div>
+                             </div>
+                        </div>
+
+                        <!-- slide 05 -->
+                        <div class="swiper-slide">
+
+                            <!-- left side -->
+                             <div class="swiper-left">
+                                <img decoding="async" src="wp4251700-1984-wallpapers.jpg" alt="">
+                             </div>
+
+                             <!-- right side -->
+                             <div class="swiper-right">
+                                <h2>1984</h2>
+                                <p>"1984" depicts a dystopian society under totalitarian rule, where the government, led by Big Brother, manipulates truth and suppresses individual freedom through constant surveillance and propaganda.</p>
+
+                                <ul class="genre">
+                                    <li>Dystopian</li>
+                                    <li>Fiction</li>
+                                    <li>Political</li>
+                                </ul>
+
+                                <p class="imdb"><i class="ri-star-s-fill"></i> <span>8.5</span>/10</p>
+
+                                <div class="buttons">
+                                    <button type="button" class="wtach">Buy Now</button>
+                                    <button type="button" class="fav"><i class="ri-add-line"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+             <!-- popular section -->
+             <div class="popular">
+                <h3>Popular</h3>
+
+                <!-- popular cards -->
+                 <div class="cards">
+                    <!-- <a href="#" class="card">
+                        <img decoding="async" src="img/Dune Part One.jpg" alt="" class="poster">
+
+                        <div class="cover">
+                            <img decoding="async" src="img/Dune Part One cover.jpg" alt="">
+
+                            <div class="cont">
+                                <div class="info">
+                                    <h4>Dune Part One</h4>
+                                    <p class="imdb"><i class="ri-star-s-fill"></i> <span>8</span>/10</p>
+                                </div>
+
+                                <div class="play-btn">
+                                    <i class="ri-play-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a> -->
+                 </div>
+             </div>
+
+
+         </section>
+    </header>
+
+    <script src="index.js"></script>
+
+    <!-- link swiper js file -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module">
+        var swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
